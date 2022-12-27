@@ -20,8 +20,12 @@ const Card = () => {
             </div>
 
             <div className="card_info">
+            <div className="card_info_keychild">
+                </div>
+                <div className="card_info_valuechild">
+                </div>
                 <div className="card_info_keychild">
-                    Repositories
+                    Repos
                 </div>
                 <div className="card_info_valuechild">
                     24

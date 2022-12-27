@@ -6,9 +6,13 @@
     width: 300px;
     height: 410px;
     padding: 10px;
+    margin-top: -50px;
     background: #F41271;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
+    background-image: url("../assets/cardbg.png");
+    background-size: cover;
+
+
     /* neon border */
     animation: pulsate 1.5s infinite alternate;
     border: 0.2rem solid #fff;
@@ -18,7 +22,7 @@
     0 0 2rem #bc13fe,
     0 0 0.8rem #bc13fe,
     0 0 2.8rem #bc13fe,
-    inset 0 0 1.3rem #bc13fe;
+    inset 0 0 1.3rem #a813fe;
 }
 
 .card_profile_pic {
@@ -52,7 +56,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 24px;
 
     color: #FFFFFF;
@@ -60,18 +64,23 @@
 
 .card_info {
     position: absolute;
-    width: 280px;
-    height: 180px;
+    padding: 20px;
+    width: 205px;
+    height: 150px;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 18px;
-    margin-top: 10rem;
-    margin-left: 1rem;
+    margin-top: 8.8rem;
+    margin-left: 0.9rem;
     color: #FFFFFF;
+    background-color: black;
+    border-radius: 1rem;
+    opacity: 0.4;
+    padding-top: 30px;
 }
 
 .card_info_keychild {
@@ -81,7 +90,7 @@
 }
 
 .card_info_valuechild {
-    width: 40%;
+    width: 55%;
     box-sizing: border-box;
     text-align: right;
 }
