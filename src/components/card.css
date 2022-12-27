@@ -1,0 +1,98 @@
+.card {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 300px;
+    height: 410px;
+    padding: 10px;
+    background: #F41271;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    /* neon border */
+    animation: pulsate 1.5s infinite alternate;
+    border: 0.2rem solid #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;
+}
+
+.card_profile_pic {
+    position: absolute;
+    width: 94px;
+    height: 91px;
+    margin: 1rem;
+}
+
+.card_name {
+    position: absolute;
+    width: 120px;
+    height: 98px;
+    margin: 2rem 0rem 0rem 8.5rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+.card_bio {
+    position: absolute;
+    width: 120px;
+    height: 38px;
+    margin-top: 0.7rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.card_info {
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    margin-top: 10rem;
+    margin-left: 1rem;
+    color: #FFFFFF;
+}
+
+.card_info_keychild {
+    width: 45%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.card_info_valuechild {
+    width: 40%;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.card_icons {
+    position: absolute;
+    width: 80px;
+    height: 29px;
+    margin-top: 360px;
+    margin-left: 33%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
