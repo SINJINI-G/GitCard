@@ -1,26 +1,28 @@
 import "./card.css"
-import{
+import {
     FaTwitter,
     FaLinkedinIn,
     FaGithub
 } from "react-icons/fa"
 
-const Card = () => {
+const Card = (props) => {
+    const { data } = props
+
     return (
         <div className="card">
             <div className="card_profile_pic">
-                <img src="https://dummyimage.com/94x91.png" alt="prof_pic"></img>
+                <img src={data.profpic} alt="prof_pic"></img>
             </div>
 
             <div className="card_name">
-                Sinjini Ghosh
+                {data.name}
                 <div className="card_bio">
-                    @SINJINI-G
+                    @{data.username}
                 </div>
             </div>
 
             <div className="card_info">
-            <div className="card_info_keychild">
+                <div className="card_info_keychild">
                 </div>
                 <div className="card_info_valuechild">
                 </div>
@@ -28,30 +30,30 @@ const Card = () => {
                     Repos
                 </div>
                 <div className="card_info_valuechild">
-                    24
+                    {data.repo}
                 </div>
                 <div className="card_info_keychild">
                     Followers
                 </div>
                 <div className="card_info_valuechild">
-                    10k
+                    {data.followers}
                 </div>
                 <div className="card_info_keychild">
                     Location
                 </div>
                 <div className="card_info_valuechild">
-                    India
+                    {data.loc}
                 </div>
                 <div className="card_info_keychild">
                     Status
                 </div>
                 <div className="card_info_valuechild">
-                    Open to work
+                    {data.status}
                 </div>
             </div>
 
             <div className="card_icons">
-                <FaTwitter/><FaLinkedinIn/><FaGithub/> 
+                <FaTwitter /><FaLinkedinIn /><FaGithub />
             </div>
         </div>
     )
