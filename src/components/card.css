@@ -102,10 +102,26 @@
 .card_icons {
     position: absolute;
     width: 80px;
-    height: 29px;
+    height: 19px;
     margin-top: 360px;
     margin-left: 33%;
     color: white;
     display: flex;
     justify-content: space-between;
+}
+
+a, a:hover, a:visited, a:link, a:active {
+    color: white;
+}
+
+a:hover{
+    /* animation: pulsate 1.5s infinite alternate; */
+    /* border: 0.1rem solid #fff; */
+    border-radius: 50%;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #a813fe;
 }

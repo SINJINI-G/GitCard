@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './home.css'
 import Octocat from '../assets/octo.gif'
@@ -18,7 +18,6 @@ const Home = () => {
         <div className='home__container'>
 
             <img src={Logo} height={100} width={100}
-                style={{ position: 'absolute', top: 10, left: 10 }}
                 className="site-logo"
             />
 

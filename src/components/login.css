@@ -14,9 +14,11 @@
 
 }
 
-.username__box {
-    width: 20vw;
-    height: 1rem;
+.input__box {
+    width: 30vw;
+    height: 0.5rem;
+    margin-top: -1rem;
+    margin-bottom: 4.5rem;
     padding: 2rem;
     border-radius: 3rem;
     font-size: 1.5rem;
@@ -27,8 +29,8 @@
 
 .submitBtn {
     height: 3rem;
-    width: 7vw;
-    margin-left: 3rem;
+    width: 10vw;
+    margin-left: -0.5rem;
     border-radius: 0.5rem;
     /* background: none; */
     color: black;
@@ -59,18 +61,12 @@
     transition-duration: 100ms;
 }
 
-.site-logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
 .site-logo:hover {
     transform: translateY(-5px);
     transition-duration: 500ms;
 }
 
-.octocat {
+.octocat{
     transition-duration: 500ms;
 }
 
@@ -137,26 +133,4 @@
 
 input:focus {
     outline: none;
-}
-
-.downloadBtn {
-    position: relative;
-    top: -210px;
-    left: 200px;
-
-    font-size: 40px;
-    /* border-radius: 2rem; */
-    border: none;
-    outline: none;
-    color: #bc13fe;
-}
-
-.downloadBtn:hover {
-    color: #fff;
-    transition-duration: 100ms;
-}
-
-.downloadBtn:active {
-    transform: translateY(2px);
-    transition-duration: 100ms;
 }

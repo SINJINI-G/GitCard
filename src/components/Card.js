@@ -1,9 +1,5 @@
 import "./card.css"
-import {
-    FaTwitter,
-    FaLinkedinIn,
-    FaGithub
-} from "react-icons/fa"
+import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa"
 
 const Card = (props) => {
     const { data } = props
@@ -53,7 +49,9 @@ const Card = (props) => {
             </div>
 
             <div className="card_icons">
-                <FaTwitter /><FaLinkedinIn /><FaGithub />
+                <FaTwitter />
+                <FaLinkedinIn />
+                <a href={data.githubUrl} target="_blank"><FaGithub /></a>
             </div>
         </div>
     )

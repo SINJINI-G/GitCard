@@ -3,9 +3,12 @@ import { useLocation } from 'react-router-dom'
 import './home.css'
 import Logo from '../assets/logo1.png'
 import Card from './Card'
+import { MdOutlineFileDownload } from "react-icons/md";
+
 
 const ShowCard = () => {
     const [User, setUser] = useState(null);
+    const [isLoggedIn, setLoggedIn] = useState(false);
 
     const location = useLocation();
     const username = location.state.username;
@@ -32,7 +35,8 @@ const ShowCard = () => {
                     followers: res.followers,
                     loc: res.location,
                     status: res.hireable ? "Hireable" : "Occupied",
-                    profpic: res.avatar_url
+                    profpic: res.avatar_url,
+                    githubUrl: res.html_url
                 })
             }
             catch (error) {
@@ -44,17 +48,27 @@ const ShowCard = () => {
     }, [])
 
     return (
-        <div className='home__container'>
-            <a href="/">
-                <img src={Logo} height={100} width={100}
-                    style={{ position: 'absolute', top: 10, left: 10 }}
-                    className="site-logo"
-                />
-            </a>
+        <>
+            <div className='home__container'>
+                <a href="/">
+                    <img src={Logo} height={100} width={100}
+                        className="site-logo"
+                    />
+                </a>
 
-            {User ? <Card data={User} /> : <h2>Loading...</h2>}
+                {User ? <Card data={User} /> : <h2>Loading...</h2>}
 
-        </div>
+                <div className='downloadBtn'>
+                    {/* {isLoggedIn ? "Log" : <MdOutlineFileDownload />} */}
+                </div>
+
+                {isLoggedIn && (<>
+                    <div>Hello</div>
+                </>
+                )}
+
+            </div>
+        </>
     )
 }
 
